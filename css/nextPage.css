@@ -1,0 +1,262 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: "Microsoft Yahei", Arial, Helvetica, sans-serif;
+}
+
+div {
+    font: 700 16px '宋体';
+
+}
+
+
+.div_image {
+    width: 300px;
+    height: 400px;
+    /* background-attachment: fixed; */
+    border: 1px solid rgb(216, 216, 216);
+}
+
+.div1 {
+    width: 100%;
+    height: 50%;
+    margin: 0 auto;
+    background-image: url(../images/1641054406400.png);
+    background-repeat: no-repeat;
+    background-position: top;
+}
+
+.div2,
+.div3 {
+    width: 80%;
+    height: 20%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+}
+
+.div2 {
+    margin-bottom: 15%;
+}
+
+.div3 {
+    display: block;
+    height: 6%;
+    font-size: 12px;
+}
+
+.wzkg {
+    width: 200px;
+    height: 200px;
+}
+
+.red {
+    color: red;
+}
+
+.green {
+    color: green;
+}
+
+#two {
+    color: pink;
+}
+
+a {
+    display: block;
+    width: 170px;
+    height: 40px;
+    background-color: rgb(78, 78, 78);
+    color: #fff;
+    line-height: 40px;
+
+}
+
+.change {
+    width: 300px;
+    height: 200px;
+    background-color: rgb(218, 32, 32);
+}
+
+.default_tis {
+    font-size: 12px;
+    color: #666;
+}
+
+.a_txt {
+    width: 80%;
+    display: inline-block;
+    padding-left: 5%;
+}
+
+a:link {
+    color: #000;
+    text-decoration: none;
+}
+
+a:hover {
+    background-color: rgb(255, 115, 0);
+}
+
+input:focus {
+    background-color: rgb(255, 214, 214);
+}
+
+.xzmm_box {
+    position: absolute;
+    width: 300px;
+    height: 300px;
+}
+
+section div:nth-child(1) {
+    transform: translateZ(300px);
+}
+
+@keyframes rotate {
+    0% {
+        transform: rotateY(0);
+    }
+
+    100% {
+        transform: rotateY(-360deg);
+    }
+}
+
+section div:nth-child(2) {
+    transform: rotateY(60deg) translateZ(300px);
+}
+
+section div:nth-child(3) {
+    transform: rotateY(120deg) translateZ(300px);
+}
+
+section div:nth-child(4) {
+    transform: rotateY(180deg) translateZ(300px);
+}
+
+section div:nth-child(5) {
+    transform: rotateY(240deg) translateZ(300px);
+}
+
+section div:nth-child(6) {
+    transform: rotateY(300deg) translateZ(300px);
+}
+
+div[class^="sprites"] {
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    border: 1px solid #000;
+    backface-visibility: hidden;
+}
+
+.sprites1 {
+    background: url(../images/Face_3.png) no-repeat -258px -55px;
+    z-index: 1;
+}
+
+.sprites2 {
+    background: url(../images/Face_3.png) no-repeat 13px -55px;
+    transform: rotateY(180deg);
+}
+
+.warp {
+    position: relative;
+    perspective: 500px;
+    width: 300px;
+    height: 300px;
+    border: 1px solid #000;
+    /* vertical-align: middle; */
+    transition: transform .5s;
+    transform-style: preserve-3d;
+}
+
+.warp:hover {
+    /* filter: blur(10px); */
+    transform: rotateY(180deg);
+}
+
+.sjx {
+    width: 100px;
+    height: 100px;
+    background-color: rgb(220, 64, 64);
+    transform-origin: left 50%;
+    transition: transform 1s;
+    /* 三角形 */
+    /* border: 50px solid transparent;
+    border-left-color: rgb(239, 179, 179); */
+}
+
+.sjx:hover {
+    transform: translate(50px, 50px) rotate(45deg) scale(2);
+}
+
+.xsj {
+    position: relative;
+    width: 250px;
+    height: 35px;
+    border: 1px solid #000;
+}
+
+.xsj::after {
+    content: '';
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    width: 10px;
+    height: 10px;
+    border-right: 1px solid #666;
+    border-bottom: 1px solid #666;
+    transform: rotate(45deg);
+    transform-origin: 50% 80%;
+    transition: transform .1s;
+}
+
+.xsj:hover::after {
+    transform: rotate(225deg);
+}
+
+/* 定义动画 */
+@keyframes fangda {
+    0% {
+        width: 100px;
+        height: 100px;
+    }
+
+    100% {
+        width: 150px;
+        height: 150px;
+    }
+}
+
+.admirt {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: rgb(19, 14, 14);
+    /* 调用动画 */
+    animation-name: fangda;
+    /* 持续时间 */
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    /* animation-direction: alternate; */
+    /* animation-fill-mode: forwards; */
+}
+
+.nitaikuang {
+    position: absolute;
+    top: 100px;
+    left: 500px;
+    width: 300px;
+    height: 300px;
+    background-color: pink;
+    z-index: 1;
+}
+
+.zhezhaoceng {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5)
+}

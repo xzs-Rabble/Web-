@@ -1,0 +1,9 @@
+body {
+  background-color: #cb334c;
+}
+div {
+  background-color: #cb334c;
+}
+div:hover {
+  color: #b97777;
+}
